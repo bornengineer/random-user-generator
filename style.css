@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.namepic {
+    display: flex;
+    width: 100%;
+    /* height: 158px; */
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.name h3 {
+    /* margin: 0 0 35px 0; */
+}
+
+.container {
+    width: 100%;
+    /* margin-top: 40px; */
+    display: flex;
+    /* justify-content: start; */
+    align-items: start;
+    flex-direction: column;
+    border: 2px solid #7c7c7c;
+    padding: 20px 60px;
+    border-radius: 0 0 20px 20px;
+    background-color: rgba(29, 35, 48, 0.9);
+}
+
+h1 {
+    color: rgb(238, 179, 16);
+    /* margin-bottom: 0px; */
+    /* height: 80px; */
+}
+
+.headcont {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: gray; */
+    width: 100%;
+    border: 2px solid #7c7c7c;
+    border-bottom: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    align-items: center;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+}
+
+span {
+    color: rgb(62, 185, 128)
+}
+
+img {
+    border-radius: 50%;
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.male {
+    border: 3px solid rgba(68, 202, 226, 0.2);
+    background-color: rgb(89, 172, 211);
+}
+
+.female {
+    border: 3px solid rgb(228, 147, 185);
+    background-color: rgb(214, 88, 197);
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 20px 50px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 20px 40px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding: 20px 30px;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    .headcont {
+        margin-top: 5px;
+    }
+}

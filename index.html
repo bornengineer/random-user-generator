@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random User Generator</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="headcont">
+            <h1>Random User Generator</h1>
+        </div>
+        <div class="container">
+            <div class="namepic">
+                <div class="name">
+                    <h3 style="margin-bottom: 35px;">First Name: <span> {{ firstname }}</span></h3>
+                    <h3 style="margin-bottom: 20px;">Last Name: <span> {{ lastname }}</span></h3>
+                </div>
+                <img :class="gender" :src="image" :alt="`${firstname} ${lastname}`">
+            </div>
+            <h3>Email: <span> {{ email }}</span></h3>
+            <h3>DOB: <span> {{ dob }}</span></h3>
+            <h3>Location: <span> {{ city }}, {{country }}</span></h3>
+            <!-- <h3>Postcode: <span> {{ postcode }} </span></h3> -->
+            <h3>Gender: <span> {{ gender }}</span></h3>
+            <h3>Phone: <span> {{ phone }}</span></h3>
+            <button @click="getUser()" :class="gender">Generate User</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
